@@ -511,7 +511,7 @@ In Deutschland gibt es vergleichsweise viele und aufwändige deskriptive Trendst
 :::
 
 ::: {.column width='50%'}
-2) Angenommen die Forsch:innen sehen in den Daten, dass in diesen Klassen die Schüler:innen in einem Leistungstest tatsächlich besser abschneiden als in Klassen mit weniger formativem Feedback, kann dennoch nicht geschlussfolgert werden, dass das formative Assessment lernförderlicher ist. Warum?
+2) Angenommen, die Forsch:innen sehen in den Daten, dass in diesen Klassen die Schüler:innen in einem Leistungstest tatsächlich besser abschneiden als in Klassen mit weniger formativem Feedback. Es kann dennoch nicht geschlussfolgert werden, dass das formative Assessment lernförderlicher ist. Warum?
 :::
 
 ::::
@@ -522,7 +522,7 @@ In Deutschland gibt es vergleichsweise viele und aufwändige deskriptive Trendst
 ## Bedrohungen der internen Validität in Alltag und Forschung {{< fa down-long >}} {.center}
 
 ## Übung mit Experiment {.smaller}
-> Führt »richtig laut werden« in der Klasse zu verbessertem Verhalten?
+> Führt »fest daran glauben« zu verbesserten Ergebnissen?
 
 ::: {.fragment}
 #### Regression zur Mitte
@@ -570,6 +570,16 @@ ACHTUNG: Die Allermeisten werden zutreffende Beispiele bringen (2,4,6,10,16) abe
 * Anchorbias [@lieder2018]
 
 
+## Tutorien {.smaller}
+
+* Mo 12 - 13:30 Uhr, 2.B308, Lisa Mayer
+* Mi 8 - 9:30 Uhr, 2.B308, Ruben Rothenhäusler
+* Do 10 - 11:30, 2.B308, Nilani Suriakumar
+* Do 16 - 17:30 Uhr, 2.2A020, Ronja Barth
+
+Siehe auch hier: [https://ogy.de/mvl-wise2526-tutorien](https://ogy.de/mvl-wise2526-tutorien)
+
+InnovationSpace-Kurs: [https://innovationspace.ph-karlsruhe.de/course/view.php?id=637](https://innovationspace.ph-karlsruhe.de/course/view.php?id=637)
 
 ## Literatur
 <style>
