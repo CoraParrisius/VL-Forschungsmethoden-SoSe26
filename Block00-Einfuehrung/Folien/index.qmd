@@ -390,10 +390,14 @@ Folien:
 
 ## Tutorien {.smaller}
 
-* Tutorien finden wöchtenlich statt
-* Termine starten kommende Woche
-* Termine werden über InnovationSpace bekannt gegeben
-* Tutor:innen: Nilani Suriakumar, Ruben Rothenhäusler, Ronja Barth, Lisa Mayer
+* Mo 12 - 13:30 Uhr, 2.B308, Lisa Mayer
+* Mi 8 - 9:30 Uhr, 2.B308, Ruben Rothenhäusler
+* Do 10 - 11:30, 2.B308, Nilani Suriakumar
+* Do 16 - 17:30 Uhr, 2.2A020, Ronja Barth
+
+Siehe auch hier: [https://ogy.de/mvl-wise2526-tutorien](https://ogy.de/mvl-wise2526-tutorien)
+
+InnovationSpace-Kurs: [https://innovationspace.ph-karlsruhe.de/course/view.php?id=637](https://innovationspace.ph-karlsruhe.de/course/view.php?id=637)
 
 
 ## Studienleistung: Teilnahme an Experimenten {.smaller}
@@ -404,7 +408,7 @@ Folien:
   * Sammeln von mind. 5 VPS **obligatorische** Studienleistung (Nicht-Erfüllung = Nicht-Bestehen)
   * Ersatzleistung möglich: Zusammenfassen von vorgegebenen Forschungsartikeln
   
-  * Angebotene Studien zur Teilnahme: *Link folgt*
+  * Angebotene Studien zur Teilnahme: [https://copar.shinyapps.io/vps_uebersicht_studien/](https://copar.shinyapps.io/vps_uebersicht_studien/)
 
 
 ## Prüfungsleistung: Klausur {.smaller}
