@@ -1,12 +1,13 @@
 ---
 title: "VL Forschungsmethoden"
-subtitle: "Messen und Beschreiben"
-author: "Samuel Merk & Cora Parrisius"
+subtitle: "Einführung in qualitative und quantitative Forschungsmethoden"
+author: "Cora Parrisius"
 
 date: today
-date-format: "[Sommersemster] YYYY"
+date-format: "[Wintersemester] 2025/26"
 
 logo: img/PHlogo.svg
+footer: Folien adaptiert von Samuel Merk | ogy.de/mvl-wise-2526
 
 format: 
   revealjs:
@@ -358,7 +359,8 @@ Bei der Dokumentenanalyse werden bereits existierende schriftliche Artefakte unt
 #| fig-width: 8.3
 #| out-width: 98%
 library(tidyverse)
-library(hrbrthemes)
+# library(hrbrthemes) # no longer available
+library(ggthemes)
 data <- tibble(Note = c(rep(1 ,4), rep(1, 28), rep(1, 62), rep(1, 204),
                   rep(2, 62), rep(2, 335), rep(2, 576), rep(2, 812), rep(2, 810),
                   rep(3,469), rep(3,1282), rep(3,1398), rep(3,1074), rep(3,430),
@@ -384,7 +386,8 @@ data %>%
   guides(size = "none") +
   ylab("Halbjahresnote (1.HJ, Kl. 8)") +
   xlab("Kompetenzstufe (Vera-8)") +
-  theme_ipsum() +
+  # theme_ipsum() + # {hrbrtheme} no longer available
+  theme_clean() + # uses {ggthemes}
   labs(title = "Fairness", 
        subtitle = "von Noten", 
        caption = "Daten nach Pant (2020)") 
@@ -405,8 +408,8 @@ schulischer Leistungsbewertung mit Noten?
 
 ## Konstruktvalidität von Noten {.smaller .center} 
 * Lehrer:innen können hochgradig objektiv und reliabel, die Leistung von Schüler:innen innerhalb einer Klasse ranken, diese jedoch nicht objektiv auf einer absoluten Skala verorten [@pant2020, @ingenkamp1977a]
-* Sollen Noten für Selektions- und Allokationszwecke genutzt werden [@fend1980] ist das Anlegen einer kriteriale Bezugsnorm (auch ‚sachliche Bezugnorm‘; Rheinberg & Fries, @rheinberg2010a), die a priori inhaltlich festlegt, was eine ‚gute‘ Leistung auszeichnet Voraussetzung für Konstruktvalidität.  
-* Sollen Noten motivieren sind formative Rückmeldungen  [@schuetze2018] und die Verwendung eine individuellen Bezugsnorm, welche die Leistungs**entwicklung** unabhängig von der absoluten Leistungsausprägung bewerten günstig.
+* Sollen Noten für Selektions- und Allokationszwecke genutzt werden [@fend1980], ist das Anlegen einer kriteriale Bezugsnorm (auch ‚sachliche Bezugnorm‘; Rheinberg & Fries, @rheinberg2010a), die a priori inhaltlich festlegt, was eine ‚gute‘ Leistung auszeichnet, Voraussetzung für Konstruktvalidität.  
+* Sollen Noten motivieren, sind formative Rückmeldungen  [@schuetze2018] und die Verwendung eine individuellen Bezugsnorm, welche die Leistungs**entwicklung** unabhängig von der absoluten Leistungsausprägung bewerten, günstig.
 * Viele Forschende vermuten, dass Lehrkräfte zur Benotung meist (implizit oder explizit) eine soziale Bezugsnorm anlegen. Dies ist im Einklang mit erstgenanntem Befund.
 
 
