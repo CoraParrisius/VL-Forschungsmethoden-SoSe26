@@ -9,10 +9,10 @@ dplyr
 stringr
 forcats
 lubridate
-patchwork
-hrbrthemes
 exams
 exams2forms
-bayestestR
 quartoMorphSvg
 faux
+bayestestR
+tinythemes
+patchwork

@@ -1,12 +1,13 @@
 ---
 title: "VL Forschungsmethoden" 
 subtitle: "Effektstärken für Gruppenunterschiede & Variablenzusammenhänge"
-author: "Samuel Merk & Cora Parrisius"
+author: "Cora Parrisius"
 
 date: today
-date-format: "[Sommersemster] YYYY"
+date-format: "[Wintersemester] 2025/26"
 
 logo: img/PHlogo.svg
+footer: Folien adaptiert von Samuel Merk | ogy.de/mvl-wise-2526
 
 format: 
   revealjs:
@@ -34,7 +35,8 @@ library(exams2forms)
 library(quartoMorphSvg)
 library(faux)
 library(bayestestR)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 ```
 
 | [{{< iconify fa6-solid:lightbulb >}}]{.imp}  | Informationsgehalt von Effektstärken |
@@ -78,7 +80,7 @@ library(hrbrthemes)
 ![](img/visOverlap.svg){width=70% fig-align="center"}  
 
 <center>
-Zum Informationsgehalt von Mittelwertsdifferenzen.
+Zum Informationsgehalt von Mittelwertsdifferenzen
 </center>
 
 
@@ -102,12 +104,12 @@ Zum Informationsgehalt von Mittelwertsdifferenzen.
 ```{r}
 #| fig-width: 13
 #| fig-height: 3.5
-#| fig-format: svg
+#| fig-format: png
 #| cache: true
 
 library(tidyverse)
 library(patchwork)
-library(hrbrthemes)
+library(tinythemes)
 plot1 <-
   ggplot(data.frame(x = c(-3, 3.8)), aes(x)) +
   stat_function(
@@ -136,11 +138,16 @@ plot1 <-
   ) +
   xlim(c(-3, 3.8)) +
   ggtitle("Großer Effekt", bquote("Cohen's" ~U[1]~ "= % of Non-Overlap = .47")) +
-  theme_modern_rc() +
-  theme(axis.title.y = element_blank(),
+  theme_ipsum_rc() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_blank())
+        axis.text.x = element_blank(),
+        plot.title = element_text(color = "white", size = 18, face = "bold", hjust = 0),
+        plot.subtitle = element_text(color = "white", size = 12, hjust = 0)
+  )
 
 plot2 <-
   ggplot(data.frame(x = c(-3, 3.5)), aes(x)) +
@@ -170,11 +177,16 @@ plot2 <-
   ) +
   xlim(c(-3, 3.5)) +
   ggtitle("Moderater Effekt", bquote("Cohen's" ~U[1]~ "= % of Non-Overlap = .33")) +
-  theme_modern_rc() +
-  theme(axis.title.y = element_blank(),
+  theme_ipsum_rc() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_blank())
+        axis.text.x = element_blank(),
+        plot.title = element_text(color = "white", size = 18, face = "bold", hjust = 0),
+        plot.subtitle = element_text(color = "white", size = 12, hjust = 0)
+  )
 
 
 plot3 <-
@@ -205,17 +217,22 @@ plot3 <-
   ) +
   xlim(c(-3, 3.2)) +
   ggtitle("Kleiner Effekt", bquote("Cohen's" ~U[1]~ "= % of Non-Overlap = .15")) +
-  theme_modern_rc() +
-  theme(axis.title.y = element_blank(),
+  theme_ipsum_rc() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_blank())
+        axis.text.x = element_blank(),
+        plot.title = element_text(color = "white", size = 18, face = "bold", hjust = 0),
+        plot.subtitle = element_text(color = "white", size = 12, hjust = 0)
+  )
 
 
 plot1 + plot2 + plot3 +
   plot_layout() &
-   theme(plot.background = element_rect(fill = "#1e1e1e",
-                                        color = "#1e1e1e")) # 1e1e1e from hrbr
+   theme(plot.background = element_rect(fill = "black",
+                                        color = "black")) # 1e1e1e from hrbr
 ```
 
 ::: {.incremental}
@@ -234,11 +251,12 @@ plot1 + plot2 + plot3 +
 #| cache: true
 #| fig-width: 13
 #| fig-height: 3.5
-#| fig-format: svg
+#| fig-format: png
 
 library(tidyverse)
 library(patchwork)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 plot1 <-
   ggplot(data.frame(x = c(-3, 3.8)), aes(x)) +
   stat_function(
@@ -288,11 +306,17 @@ plot1 <-
   ) +
   xlim(c(-3, 3.7)) +
   ggtitle("Großer Effekt", "Cohen's d = Standardized Mean Difference = .8") +
-  theme_modern_rc() +
-  theme(axis.title.y = element_blank(),
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_blank())
+        axis.text.x = element_blank(),
+        plot.title = element_text(color = "white", size = 18, face = "bold", hjust = 0),
+        plot.subtitle = element_text(color = "white", size = 12, hjust = 0)
+  )
 
 plot2 <-
   ggplot(data.frame(x = c(-3, 3.5)), aes(x)) +
@@ -343,11 +367,17 @@ plot2 <-
   ) +
   xlim(c(-3, 3.5)) +
   ggtitle("Moderater Effekt", "Cohen's d = Standardized Mean Difference = .5") +
-  theme_modern_rc() +
-  theme(axis.title.y = element_blank(),
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_blank())
+        axis.text.x = element_blank(),
+        plot.title = element_text(color = "white", size = 18, face = "bold", hjust = 0),
+        plot.subtitle = element_text(color = "white", size = 12, hjust = 0)
+  )
 
 
 plot3 <-
@@ -399,11 +429,17 @@ plot3 <-
   ) +
   xlim(c(-3, 3.2)) +
   ggtitle("Kleiner Effekt", "Cohen's d = Standardized Mean Difference = .2") +
-  theme_modern_rc() +
-  theme(axis.title.y = element_blank(),
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_blank())
+        axis.text.x = element_blank(),
+        plot.title = element_text(color = "white", size = 18, face = "bold", hjust = 0),
+        plot.subtitle = element_text(color = "white", size = 12, hjust = 0)
+  )
 
 
 plot1 + plot2 + plot3 +
@@ -443,15 +479,16 @@ Die Grundidee von Cliff's d ist, jeden Punkt einer Gruppe $x_i$ mit jedem Punkt 
 #| fig-height: 4
 #| out-width: 80%
 #| fig-align: center
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 
 tibble(Placebo = c(1, 2, 2, 3) + 1,
          Control = c(3, 4, 4, 5)) |>
   gather(Gruppe, Nervosität) |>
   ggplot(aes(x = Gruppe, Nervosität)) +
   geom_dotplot(
-    color = "#ffffff",
-    fill = "#ffffff",
+    color = "black",
+    fill = "black", #fffffff
     binaxis = "y",
     stackdir = "center"
   ) +
@@ -468,13 +505,14 @@ tibble(Placebo = c(1, 2, 2, 3) + 1,
     yend = 2
   ), color = "#26732650") +
   geom_dotplot(
-    color = "#ffffff",
-    fill = "#ffffff",
+    color = "black",
+    fill = "black",
     binaxis = "y",
     stackdir = "center"
   ) +
   ggtitle("Illustration Cliff's d") +
-  theme_modern_rc()
+  #theme_modern_rc()
+  theme_ipsum_rc()
 ```
 
 :::
@@ -504,7 +542,8 @@ $$= .625$$
 #| fig-height: 4
 #| out-width: 99%
 #| fig-align: center
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 
 tibble(Placebo = c(1, 2, 2, 3) + 1,
          Control = c(3, 4, 4, 5)) |>
@@ -589,13 +628,14 @@ tibble(Placebo = c(1, 2, 2, 3) + 1,
     yend = 2
   ), color = "#26732650") +
   geom_dotplot(
-    color = "#ffffff",
-    fill = "#ffffff",
+    color = "black",
+    fill = "black",
     binaxis = "y",
     stackdir = "center"
   ) +
   ggtitle("Illustration Cliff's d") +
-  theme_modern_rc()
+  #theme_modern_rc()
+  theme_ipsum_rc()
 
 
 ```
@@ -619,30 +659,7 @@ tibble(Placebo = c(1, 2, 2, 3) + 1,
 <iframe width="1280" height="500" src="Integrierte Aufgaben/guessing-cliff-d-abschluesse_sc.html" title="Aufgabe"></iframe>
 </center>
 
-## Job-Alert: Jetzt studentische Hilskraft werden! {.smaller}
 
-Wir suchen engagierte Hiwis für verschiedene Aufgabenbereiche:
-
-::: columns
-
-:::{.column width="70%"}
-
-* Forschungsprojekte (Literaturrecherche, Datenerhebung, -aufbereitung, -analyse, -dokumentation)
-* Administrative Tätigkeiten im Fachbereich
-
-Mehr Infos: [https://t1p.de/ifbf-hiwi-2025](https://t1p.de/ifbf-hiwi-2025)
-
-Jetzt bewerben!
-
-
-:::
-
-:::{.column width="30%"}
-
-![](img/t1p-de-ifbf-hiwi-2025.png){fig-align="center"}
-
-:::
-:::
 
 ## <!--Kendall's tau--> {.center .smaller}
 [{{< iconify teenyicons:table-solid >}} Assoziation zweier (mind.) ordinalskalierter Variablen]{style="color:#267326; font-size:1.3em;"}
@@ -699,10 +716,11 @@ min_data <-
 
 ggplot(min_data, aes(`Höchster Abschluss der Eltern`, 
              `Höchster Abschluss\ndes Befragten`)) +
-  geom_point(color = "#8cd000") +
+  geom_point(color = "#267326") +
   facet_wrap( ~ Effektgröße, ncol = 5) +
-  theme_modern_rc() +
-  theme(strip.text = element_text(color = "white")) 
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
+  theme(strip.text = element_text(color = "black")) 
 ```
 
 
@@ -756,7 +774,8 @@ ggplot() +
   geom_point(data = data_rawplot, aes(x,y),
              color = color,
              size = size_point) +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   scale_color_manual(values = c("#8cd000", 
                                 "#d77d00",
                                 "darkgrey", 
@@ -776,14 +795,15 @@ min_plot <-
                       "Kleine neg. Assoziation")), 
          aes(`Höchster Abschluss der Eltern`, 
              `Höchster Abschluss\ndes Befragten`)) +
-  geom_jitter(color = "#8cd000", width = .2, height = .2) +
-  theme_modern_rc() +
-  theme(strip.text = element_text(color = "white"))
+  geom_jitter(color = "#267326", width = .2, height = .2) +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
+  theme(strip.text = element_text(color = "black"))
 
 vis_tau(
   min_plot,
   rnd = 0,
-  color = "#8cd000",
+  color = "#267326",
   alpha = .5,
   linewidth = .2,
   size_point = 4
@@ -838,7 +858,7 @@ $= \frac{\color{#8cd000}{5}\;-\; \color{#d77d00}{1}}{6} = \frac{4}{6} = .\bar{6}
 
 ```{r}
 #| label: quartomorph taub
-#| cache: false
+#| cache: true
 morph_svg(
   "img/ERKLtaubRE-2.svg", 
   "img/ERKLtaubRE-1.svg", 
@@ -878,7 +898,7 @@ $$\tau_{\mathrm{b}} \left(X,Y \right)=\frac{n_{\mathrm{K}}-n_{\mathrm{D}}}{\sqrt
 vis_tau <- function(plot_raw, 
                     rnd = 1, 
                     alpha = .5, 
-                    color = "#8cd000", 
+                    color = "#267326", 
                     linewidth = 3, 
                     size_point = 3) {
 data_rawplot <- 
@@ -920,11 +940,12 @@ ggplot() +
   geom_point(data = data_rawplot, aes(x,y),
              color = color,
              size = size_point) +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   scale_color_manual(values = c("#d77d00", 
                                 "#8cd000",
                                 "#0FA5D7", 
-                                "#ffffff"),
+                                "purple"),
                      guide = guide_legend(override.aes = list(size = 4,
                                                               alpha = 1))
                      )
@@ -936,8 +957,9 @@ min_plot <-
                  y = c(1,2,3,2,3,4)),
          aes(x,y)) +
   geom_jitter(color = "#8cd000", width = .2, height = .2) +
-  theme_modern_rc() +
-  theme(strip.text = element_text(color = "white"))
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
+  theme(strip.text = element_text(color = "black"))
 
 vis_tau(
   min_plot,
@@ -959,7 +981,7 @@ vis_tau(
 
 ```
 
-$\tau_{\mathrm{b}} \left(X,Y \right)=\frac{\color{#8cd000}{n_{\mathrm{K}}}-\color{#d77d00}{n_{\mathrm{D}}}}{\sqrt{\left(\color{#8cd000}{n_{\mathrm{K}}}+\color{#d77d00}{n_{\mathrm{D}}}+\color{#11111180}{n_{\mathrm{B}(X)}}\right) \cdot\left(\color{#8cd000}{n_{\mathrm{K}}}+\color{#d77d00}{n_{\mathrm{D}}}+\color{#0FA5D7}{n_{\mathrm{B}(Y)}}\right)}} = \frac{\color{#8cd000}{10} - \color{#d77d00}{1}}{\sqrt{\left(\color{#8cd000}{10} + \color{#d77d00}{1} +\color{#11111180}{2} \right) \cdot \left( \color{#8cd000}{10} + \color{#d77d00}{1} +\color{#0FA5D7}{2} \right)}} \approx .69$
+$\tau_{\mathrm{b}} \left(X,Y \right)=\frac{\color{#8cd000}{n_{\mathrm{K}}}-\color{#d77d00}{n_{\mathrm{D}}}}{\sqrt{\left(\color{#8cd000}{n_{\mathrm{K}}}+\color{#d77d00}{n_{\mathrm{D}}}+\color{purple}{n_{\mathrm{B}(X)}}\right) \cdot\left(\color{#8cd000}{n_{\mathrm{K}}}+\color{#d77d00}{n_{\mathrm{D}}}+\color{#0FA5D7}{n_{\mathrm{B}(Y)}}\right)}} = \frac{\color{#8cd000}{10} - \color{#d77d00}{1}}{\sqrt{\left(\color{#8cd000}{10} + \color{#d77d00}{1} +\color{purple}{2} \right) \cdot \left( \color{#8cd000}{10} + \color{#d77d00}{1} +\color{#0FA5D7}{2} \right)}} \approx .69$
 
 
 ## Eigenschaften Kendall's $\tau_{\mathrm{b}}$  {.center}
@@ -1007,7 +1029,8 @@ ggplot(
   stat_smooth(method = "lm", 
               se = F, 
               color = "#8cd000") +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   labs(
     title = "Assoziation", 
     subtitle = "von Förderungsdauer & -erfolg")
@@ -1038,7 +1061,8 @@ ggplot(
   stat_smooth(method = "lm", 
               se = F, 
               color = "#8cd000") +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   labs(
     title = "Assoziation", 
     subtitle = "von Förderungsdauer & -erfolg")
@@ -1067,7 +1091,8 @@ ggplot(
   stat_smooth(method = "lm", 
               se = F, 
               color = "#8cd000") +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   labs(
     title = "Assoziation", 
     subtitle = "von Förderungsdauer & -erfolg")
@@ -1101,7 +1126,8 @@ plot <-
   geom_point(color = "#8cd000") +
   geom_rug(color = "#8cd000",
            alpha = .4) +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   labs(
     title = "Assoziation", 
     subtitle = "von Förderungsdauer & -erfolg") +
