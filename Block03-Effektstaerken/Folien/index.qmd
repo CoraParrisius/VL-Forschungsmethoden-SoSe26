@@ -487,8 +487,8 @@ tibble(Placebo = c(1, 2, 2, 3) + 1,
   gather(Gruppe, Nervosität) |>
   ggplot(aes(x = Gruppe, Nervosität)) +
   geom_dotplot(
-    color = "black",
-    fill = "black", #fffffff
+    color = "#ffffff",
+    fill = "#ffffff", 
     binaxis = "y",
     stackdir = "center"
   ) +
