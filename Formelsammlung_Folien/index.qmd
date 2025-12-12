@@ -1,0 +1,30 @@
+---
+title: "VL Forschungsmethoden" 
+subtitle: "Formelsammlung für Klausur"
+author: "Cora Parrisius"
+
+date: today
+date-format: "[Wintersemester] 2025/26"
+
+logo: img/PHlogo.svg
+footer: Formelsammlung Forschungsmethoden WiSe 25/26
+
+format: 
+  revealjs:
+    embed-resources: false
+    slide-number: c
+    html-math-method: mathjax
+
+brand: _template/_brand.yml    
+
+lang: de
+
+csl: apa.csl
+
+---
+
+## Effektstärken {.center}
+
+* $\text{Cohen's } d(XY) = \frac{\bar{x}-\bar{y}}{\sqrt{\frac{s_x^2 + s_y^2}{2}}}$
+* $\text{Cliff's } d = \frac{\color{#267326}{\#(x_i > y_i)} - \color{#d77d00}{\#(x_i < y_i)}}{\#X \cdot \#Y}$
+* $\text{Kendall's } \tau_{\mathrm{b}} \left(X,Y \right)=\frac{\color{#8cd000}{n_{\mathrm{K}}}-\color{#d77d00}{n_{\mathrm{D}}}}{\sqrt{\left(\color{#8cd000}{n_{\mathrm{K}}}+\color{#d77d00}{n_{\mathrm{D}}}+\color{purple}{n_{\mathrm{B}(X)}}\right) \cdot\left(\color{#8cd000}{n_{\mathrm{K}}}+\color{#d77d00}{n_{\mathrm{D}}}+\color{#0FA5D7}{n_{\mathrm{B}(Y)}}\right)}}$
