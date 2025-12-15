@@ -1,11 +1,13 @@
 ---
 title: "VL Forschungsmethoden" 
 subtitle: "Inferenzstatistik"
-author: "Samuel Merk & Cora Parrisius"
+author: "Cora Parrisius"
+
 date: today
-date-format: "[Sommersemster] YYYY"
+date-format: "[Wintersemester] 2025/26"
 
 logo: img/PHlogo.svg
+footer: Folien adaptiert von Samuel Merk | ogy.de/mvl-wise-2526
 
 format: 
   revealjs:
@@ -24,7 +26,7 @@ csl: apa.csl
 ## Inhalte dieses Vorlesungsblocks {.center .smaller}
 ```{r hidden chunk which creates template stuff}
 #| echo: false
-#| cache: true
+#| cache: false
 
 ## in terminal ########
 # quarto install extension quarto-ext/fontawesome
@@ -36,7 +38,8 @@ library(fontawesome)
 library(tidyverse)
 library(faux)
 library(bayestestR)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 library(quartoMorphSvg)
 set.seed(848265)
 
@@ -140,7 +143,8 @@ close(fileConn)
 #| fig-height: 4
 #| out-width: 100%
 library(tidyverse)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 n <- 4
 y <- 3
 x <- seq(0, 1, by=.01)
@@ -149,7 +153,8 @@ posterior <- dbeta(x, (1 + y), (1 + n - y))
 
 ggplot(tibble(x = x, y = y)) + 
   geom_line(aes(x=x, y=y), color = "#d77d00") +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   xlab("Anteil Befürworter »mit Noten«") +
   ylab("Wahrscheinlichkeit(sdichte)") +
   theme(axis.text.y = element_blank()) +
@@ -181,7 +186,8 @@ Daten:
 #| fig-height: 4
 #| out-width: 100%
 library(tidyverse)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 n <- 4
 y <- 3
 x <- seq(0, 1, by=.01)
@@ -192,7 +198,8 @@ dat <- data.frame(x, prior, posterior)
 
 ggplot(dat_long) + 
   geom_line(aes(x=x, y=value, color=distribution)) +
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   scale_color_manual(values = c("#8cd000", "#d77d00")) +
   xlab("Anteil Befürworter »mit Noten«") +
   ylab("Wahrscheinlichkeit(sdichte)") +
@@ -223,7 +230,8 @@ Daten:
 #| fig-height: 4
 #| out-width: 100%
 library(tidyverse)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 n <- 4
 y <- 3
 x <- seq(0, 1, by=.010)
@@ -241,7 +249,8 @@ ggplot(dat_long) +
                 alpha = 0.25,
                 xlim = c(qbeta(.025,(1 + y), (1 + n - y)), 
                          qbeta(.975,(1 + y), (1 + n - y)))) + 
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   scale_color_manual(values = c("#8cd000", "#d77d00")) +
   xlab("Anteil Befürworter »mit Noten«") +
   ylab("Wahrscheinlichkeit(sdichte)") +
@@ -277,7 +286,8 @@ Daten:
 #| fig-height: 4
 #| out-width: 100%
 library(tidyverse)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 n <- 41
 y <- 32
 x <- seq(0, 1, by=.010)
@@ -295,7 +305,8 @@ ggplot(dat_long) +
                 alpha = 0.25,
                 xlim = c(qbeta(.025,(1 + y), (1 + n - y)), 
                          qbeta(.975,(1 + y), (1 + n - y)))) + 
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   scale_color_manual(values = c("#8cd000", "#d77d00")) +
   xlab("Anteil Befürworter »mit Noten«") +
   ylab("Wahrscheinlichkeit(sdichte)") +
@@ -330,7 +341,8 @@ Daten:
 #| fig-height: 4
 #| out-width: 100%
 library(tidyverse)
-library(hrbrthemes)
+#library(hrbrthemes)
+library(tinythemes)
 n <- 423
 y <- 299
 x <- seq(0, 1, by=.001)
@@ -348,7 +360,8 @@ ggplot(dat_long) +
                 alpha = 0.25,
                 xlim = c(qbeta(.025,(1 + y), (1 + n - y)), 
                          qbeta(.975,(1 + y), (1 + n - y)))) + 
-  theme_modern_rc() +
+  #theme_modern_rc() +
+  theme_ipsum_rc() +
   scale_color_manual(values = c("#8cd000", "#d77d00")) +
   xlab("Anteil Befürworter »mit Noten«") +
   ylab("Wahrscheinlichkeit(sdichte)") +
