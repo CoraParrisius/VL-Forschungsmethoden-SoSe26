@@ -1,11 +1,13 @@
 ---
 title: "VL Forschungsmethoden" 
 subtitle: "Qualitative Methoden"
-author: "Samuel Merk & Cora Parrisius"
+author: "Cora Parrisius"
+
 date: today
-date-format: "[Sommersemster] YYYY"
+date-format: "[Wintersemester] 2025/26"
 
 logo: img/PHlogo.svg
+footer: Folien adaptiert von Samuel Merk | ogy.de/mvl-wise-2526
 
 format: 
   revealjs:
@@ -100,6 +102,45 @@ close(fileConn)
 -   Forschungslogik ist meist induktiv und abduktiv [@flick1995]
 -   Untersuchungsdesign, Datenanalyse und Forschungsfrage können sich im Lauf des Forschungsprozesses ändern
 :::
+:::
+
+## Forschungslogiken {.smaller}
+
+::: columns
+::: {.column width="33%"}
+
+#### Deduktion
+::: fragment
+* **Regel**: Wenn es regnet, ist der Boden nass.
+* **Fall**: Es regnet.
+* **Konsequenz**: Der Boden ist nass.
+
+:::
+::: 
+::: {.column width="33%"}
+
+#### Induktion
+::: fragment
+* **Beobachtung**: Immer, wenn es geregnet hat, war der Boden nass.
+* **Schluss (Regel)**: Wenn es regnet, ist der Boden nass.
+
+:::
+:::
+::: {.column width="33%"}
+
+#### Abduktion
+::: fragment
+* **Konsequenz**: Der Boden ist nass.
+* **Mögliche Erklärung (Fall)**: Es hat geregnet.
+
+:::
+:::
+:::
+::: fragment
+* **Deduktion**: Regel -> Fall -> Konsequenz
+* **Induktion**: Fälle/Konsequenzen -> Regel
+* **Abduktion**: Konsequenz -> möglicher Fall (unter gegebener Regel)
+
 :::
 
 ## Aufgaben {.center}
