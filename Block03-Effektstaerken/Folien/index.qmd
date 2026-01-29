@@ -919,8 +919,8 @@ data_to_add <-
                round(xlinks, rnd) < round(xrechts, rnd) ~ "konkordant", 
              round(ylinks, rnd) > round(yrechts, rnd) &
                round(xlinks, rnd) < round(xrechts, rnd) ~ "diskordant",
-             round(xlinks, rnd) == round(xrechts, rnd) ~ "tie AV",
-             round(ylinks, rnd) == round(yrechts, rnd) ~ "tie UV")) |> 
+             round(xlinks, rnd) == round(xrechts, rnd) ~ "tie UV",
+             round(ylinks, rnd) == round(yrechts, rnd) ~ "tie AV")) |> 
   filter(!(ylinks == yrechts & xlinks == xrechts)) |> 
   filter(!is.na(Vergleich))
 
