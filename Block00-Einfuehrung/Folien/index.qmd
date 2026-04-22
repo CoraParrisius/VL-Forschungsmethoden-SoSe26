@@ -7,7 +7,7 @@ date: today
 date-format: "[Sommersemester] YYYY"
 
 logo: img/ph-logo.svg
-footer: Folien {{< iconify streamline:creative-commons-solid >}} {{< iconify fa6-brands:creative-commons-by >}} unter ogy.de/mvl-sose-26
+footer: Folien {{< iconify streamline:creative-commons-solid >}} {{< iconify fa6-brands:creative-commons-by >}} unter ogy.de/mvl-sose-2026
 
 format: 
   revealjs:
@@ -415,7 +415,7 @@ Menschliche Wahrnehmung ist **selektiv** <br><br>
 
 Folien:
 
-![https://ogy.de/mvl-sose-26](img/QR Code ogy-de-mvl-sose-26.png){width=50%}
+![https://ogy.de/mvl-sose-2026](img/QR Code ogy-de-mvl-sose-2026.png){width=50%}
 :::
 
 :::
