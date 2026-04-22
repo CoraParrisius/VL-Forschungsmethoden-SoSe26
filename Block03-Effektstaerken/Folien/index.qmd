@@ -1,13 +1,13 @@
 ---
 title: "VL Forschungsmethoden" 
 subtitle: "Effektstärken für Gruppenunterschiede & Variablenzusammenhänge"
-author: "Cora Parrisius"
+author: "Samuel Merk & Cora Parrisius"
 
 date: today
-date-format: "[Wintersemester] 2025/26"
+date-format: "[Sommersemester] YYYY"
 
-logo: img/PHlogo.svg
-footer: Folien adaptiert von Samuel Merk | ogy.de/mvl-wise-2526
+logo: img/ph-logo.svg
+footer: Folien {{< iconify streamline:creative-commons-solid >}} {{< iconify fa6-brands:creative-commons-by >}} unter ogy.de/mvl-sose-26
 
 format: 
   revealjs:

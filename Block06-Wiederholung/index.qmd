@@ -2,10 +2,13 @@
 title: "VL Forschungsmethoden" 
 subtitle: "Wdh. anhand eines Live-Experiments"
 author: "Samuel Merk & Cora Parrisius"
-date: today
-date-format: "[Sommersemster] YYYY"
 
-logo: img/PHlogo.svg
+date: today
+date-format: "[Sommersemester] YYYY"
+
+logo: img/ph-logo.svg
+footer: Folien {{< iconify streamline:creative-commons-solid >}} {{< iconify fa6-brands:creative-commons-by >}} unter ogy.de/mvl-sose-26
+
 
 format: 
   revealjs:
