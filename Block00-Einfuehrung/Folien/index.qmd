@@ -394,6 +394,17 @@ Menschliche Wahrnehmung ist **selektiv** <br><br>
 
 ## Organisatorische Einführung [{{< fa sitemap >}}]{.imp} {.smaller .center}
 
+> Bei Fragen zur Vorlesung erreichen Sie uns unter [fome-lehre@ph-karlsruhe.de](mailto:fome-lehre@ph-karlsruhe.de)
+
+Bevor Sie mit uns Kontakt aufnehmen, fragen Sie sich bitte kurz:
+
+* Hätte ich das auch einfach eine:n Kommiliton:in fragen können?
+* Steht die Info vielleicht auf irgend einer Folie?
+* Kann ich die Frage auch kurz nach der VL persönlich klären?
+
+
+## Organisatorische Einführung [{{< fa sitemap >}}]{.imp} {.smaller .center}
+
 > Die Vorlesung umfasst 5 inhaltliche Blöcke.
 
 :::: {.columns}
@@ -423,11 +434,11 @@ Folien:
 
 ## Tutorien {.smaller}
 
-* Zeitpunkt tbd, Raum tbd, Nilani Suriakumar
-* Zeitpunkt tbd, Raum tbd, Ruben Rothenhäusler
-* Do 10 - 11:30, Raum tbd, Ruben Rothenhäusler
-* Do 10 - 11:30 Uhr, Raum tbd, Lisa Mayer
-* Fr 10 - 11:30 Uhr, Raum tbd, Ronja Barth
+* Mo 8 - 9:30, Raum 3.110, Nilani Suriakumar
+* Mi 8 - 9:30, Raum 1.203, Ruben Rothenhäusler
+* Do 12 - 13:30, Raum 1.013, Ruben Rothenhäusler
+* Do 12 - 13:30, Raum 1.113, Lisa Mayer
+* Fr 10 - 11:30, Raum 1.203, Ronja Barth
 
 Siehe auch hier: [https://ogy.de/mvl-sose26-tutorien](https://ogy.de/mvl-sose26-tutorien)
 
