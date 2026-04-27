@@ -214,10 +214,48 @@ Die **statistische Validität** einer Studie beschreibt, inwiefern die statistis
 Die **Präsentationsqualität** einer Studie beschreibt, inwiefern die Ergebnisse der Studie transparent, verständlich und zugänglich präsentiert werden [@doering2016].
 
 
+<!--
 ## Aufgabe
 <center>
 <iframe width="980" height="500" src="Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html" title="Aufgabe"></iframe>
 </center>
+-->
+
+## Aufgabe {#aufgabe1}
+
+<div id="aufgabe-container"></div>
+
+<script>
+  function loadAufgabe() {
+    const now = new Date();
+
+    const start = new Date("2026-04-23T14:55:00+02:00");
+    const end   = new Date("2026-04-23T17:30:00+02:00");
+    const msUntilStart = start - now;
+
+    if (msUntilStart > 0) {
+    setTimeout(() => location.reload(), msUntilStart);
+    }
+
+    let src;
+
+    if (now >= start && now <= end) {
+      src = "Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html";
+    } else {
+      src = "Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html";
+    }
+
+    document.getElementById("aufgabe-container").innerHTML = `
+      <center>
+        <iframe width="980" height="500" src="${src}" title="Aufgabe"></iframe>
+      </center>
+    `;
+    
+  }
+
+  document.addEventListener("DOMContentLoaded", loadAufgabe);
+</script>
+
 
 ## <!--Systematisierung (quantitativer Studien) in den Sozialwissenschaften--> {.center}
 [{{< fa map >}} Systematisierung (quantitativer Studien) in den Sozialwissenschaften]{.em15 .c .imp}
@@ -568,17 +606,6 @@ ACHTUNG: Die Allermeisten werden zutreffende Beispiele bringen (2,4,6,10,16) abe
 * Confirmation Bias [@nickerson1998]
 * Anchorbias [@lieder2018]
 
-
-## Tutorien {.smaller}
-
-* Mo 12 - 13:30 Uhr, 2.B308, Lisa Mayer
-* Mi 8 - 9:30 Uhr, 2.B308, Ruben Rothenhäusler
-* Do 10 - 11:30, 2.B308, Nilani Suriakumar
-* Do 16 - 17:30 Uhr, 2.2A020, Ronja Barth
-
-Siehe auch hier: [https://ogy.de/mvl-wise2526-tutorien](https://ogy.de/mvl-wise2526-tutorien)
-
-InnovationSpace-Kurs: [https://innovationspace.ph-karlsruhe.de/course/view.php?id=637](https://innovationspace.ph-karlsruhe.de/course/view.php?id=637)
 
 ## Literatur
 <style>

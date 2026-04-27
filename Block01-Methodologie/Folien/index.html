@@ -315,13 +315,48 @@ Popper, K. (1989). Logik der Forschung. Mohr.</p>
 <p>Die <strong>statistische Validität</strong> einer Studie beschreibt, inwiefern die statistischen Methoden einer Studie aussagekräftig sind <span class="citation" data-cites="doering2016">(<a href="#/literatur" role="doc-biblioref" onclick="">Döring &amp; Bortz, 2016</a>)</span>.</p>
 <h4 id="präsentationsqualität">Präsentationsqualität</h4>
 <p>Die <strong>Präsentationsqualität</strong> einer Studie beschreibt, inwiefern die Ergebnisse der Studie transparent, verständlich und zugänglich präsentiert werden <span class="citation" data-cites="doering2016">(<a href="#/literatur" role="doc-biblioref" onclick="">Döring &amp; Bortz, 2016</a>)</span>.</p>
-</section>
-<section id="aufgabe" class="slide level2">
-<h2>Aufgabe</h2>
+<!--
+## Aufgabe
 <center>
-<iframe width="980" height="500" src="Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html" title="Aufgabe">
-</iframe>
+<iframe width="980" height="500" src="Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html" title="Aufgabe"></iframe>
 </center>
+-->
+</section>
+<section id="aufgabe1" class="slide level2">
+<h2>Aufgabe</h2>
+<div id="aufgabe-container">
+
+</div>
+<script>
+  function loadAufgabe() {
+    const now = new Date();
+
+    const start = new Date("2026-04-23T14:55:00+02:00");
+    const end   = new Date("2026-04-23T17:30:00+02:00");
+    const msUntilStart = start - now;
+
+    if (msUntilStart > 0) {
+    setTimeout(() => location.reload(), msUntilStart);
+    }
+
+    let src;
+
+    if (now >= start && now <= end) {
+      src = "Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html";
+    } else {
+      src = "Integrierte Aufgaben/guetekriterium-wissenschaftlicher-erkenntnis-erkennen.html";
+    }
+
+    document.getElementById("aufgabe-container").innerHTML = `
+      <center>
+        <iframe width="980" height="500" src="${src}" title="Aufgabe"></iframe>
+      </center>
+    `;
+    
+  }
+
+  document.addEventListener("DOMContentLoaded", loadAufgabe);
+</script>
 </section>
 <section id="section-2" class="slide level2 center">
 <h2><!--Systematisierung (quantitativer Studien) in den Sozialwissenschaften--></h2>
@@ -438,7 +473,7 @@ Popper, K. (1989). Logik der Forschung. Mohr.</p>
 </div>
 </div></div>
 </section>
-<section id="aufgabe-1" class="slide level2">
+<section id="aufgabe" class="slide level2">
 <h2>Aufgabe</h2>
 <center>
 <iframe width="780" height="500" src="Integrierte Aufgaben/Deskriptive_Explorative_Explanative_Studien_r.html" title="Aufgabe"></iframe>
@@ -485,7 +520,7 @@ Bei Experimenten liegt die Gruppeneinteilung in der Hand der Forschenden, wohing
 </div>
 </div>
 </section>
-<section id="aufgabe-2" class="slide level2 center">
+<section id="aufgabe-1" class="slide level2 center">
 <h2>Aufgabe</h2>
 <center>
 <iframe width="880" height="500" src="Integrierte Aufgaben/Exp_Quasiexp_Nichtexp_Studien_r.html" title="Aufgabe"></iframe>
@@ -617,17 +652,6 @@ Bei Experimenten liegt die Gruppeneinteilung in der Hand der Forschenden, wohing
 <li>Confirmation Bias <span class="citation" data-cites="nickerson1998">(<a href="#/literatur" role="doc-biblioref" onclick="">Nickerson, 1998</a>)</span></li>
 <li>Anchorbias <span class="citation" data-cites="lieder2018">(<a href="#/literatur" role="doc-biblioref" onclick="">Lieder, Griffiths, M. Huys, &amp; Goodman, 2018</a>)</span></li>
 </ul>
-</section>
-<section id="tutorien" class="slide level2 smaller">
-<h2>Tutorien</h2>
-<ul>
-<li>Mo 12 - 13:30 Uhr, 2.B308, Lisa Mayer</li>
-<li>Mi 8 - 9:30 Uhr, 2.B308, Ruben Rothenhäusler</li>
-<li>Do 10 - 11:30, 2.B308, Nilani Suriakumar</li>
-<li>Do 16 - 17:30 Uhr, 2.2A020, Ronja Barth</li>
-</ul>
-<p>Siehe auch hier: <a href="https://ogy.de/mvl-wise2526-tutorien">https://ogy.de/mvl-wise2526-tutorien</a></p>
-<p>InnovationSpace-Kurs: <a href="https://innovationspace.ph-karlsruhe.de/course/view.php?id=637">https://innovationspace.ph-karlsruhe.de/course/view.php?id=637</a></p>
 </section>
 <section id="literatur" class="slide level2 smaller scrollable">
 <h2>Literatur</h2>
