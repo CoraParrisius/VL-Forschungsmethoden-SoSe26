@@ -229,8 +229,8 @@ Die **Präsentationsqualität** einer Studie beschreibt, inwiefern die Ergebniss
   function loadAufgabe() {
     const now = new Date();
 
-    const start = new Date("2026-04-23T14:55:00+02:00");
-    const end   = new Date("2026-04-23T17:30:00+02:00");
+    const start = new Date("2026-04-29T16:00:00+02:00");
+    const end   = new Date("2026-04-29T17:30:00+02:00");
     const msUntilStart = start - now;
 
     if (msUntilStart > 0) {
@@ -510,17 +510,71 @@ In Deutschland gibt es vergleichsweise viele und aufwändige deskriptive Trendst
 
 
 ## Steigerung der internen Validität {.center .smaller}
-:::{.incremental}
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment fragment-index=1}
 * Experimentelle Studiendesigns
-* Längsschnittliche Studiendesigns
-* Matching Studien
-* Laborstudien
-* Verblindung
-* Kontroll- und Vergleichsgruppen
-* Inferenzstatistik
-* Direkte Replikationsstudien
-* Präregistrierung
+
 :::
+
+::: {.fragment fragment-index=2}
+* Längsschnittliche Studiendesigns 
+
+:::
+
+::: {.fragment fragment-index=3}
+* Matching Studien
+
+:::
+
+::: {.fragment fragment-index=4}
+* Laborstudien
+
+:::
+
+::: {.fragment fragment-index=5}
+* Verblindung
+
+:::
+
+::: {.fragment fragment-index=6}
+* Kontroll- und Vergleichsgruppen
+
+:::
+
+::: {.fragment fragment-index=7}
+* Inferenzstatistik
+
+:::
+
+::: {.fragment fragment-index=8}
+* Direkte Replikationsstudien
+
+:::
+
+::: {.fragment fragment-index=9}
+* Präregistrierung
+
+:::
+
+
+:::
+
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-in-then-out fragment-index=3}
+![](img/Matching.png)
+:::
+
+
+:::
+
+:::
+
 
 
 ## Steigerung der externen Validität {.center}
